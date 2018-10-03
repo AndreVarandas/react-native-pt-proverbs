@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "sdkVersion": "27.0.0",
+    "name": "Provérbios Portugueses",
+    "icon": "./logo.png",
+    "privacy": "public",
+    "slug": "proverbiosppt",
+    "ios": {
+      "bundleIdentifier": "com.varandas.proverbiosportugueses"
+    },
+    "android": {
+      "package": "com.varandas.proverbiosportugueses"
+    }
+  }
+}
