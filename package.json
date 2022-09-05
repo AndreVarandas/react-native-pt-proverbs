@@ -12,28 +12,28 @@
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest-expo": "~27.0.0",
-    "react-native-scripts": "1.14.0",
+    "jest-expo": "^46.0.0",
+    "prettier": "^2.7.1",
     "react-test-renderer": "16.3.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "test": "jest"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "react-proptypes": "^1.0.0",
-    "expo": "^27.0.1",
+    "expo": "^46.0.0",
     "proverbios-portugueses": "^1.0.3",
-    "react": "16.3.1",
-    "react-native": "~0.55.2",
+    "react": "18.0.0",
+    "react-native": "0.69.5",
     "react-native-swipe-cards": "^0.1.1",
+    "react-proptypes": "^1.0.0",
     "styled-components": "^3.4.5"
   }
 }
