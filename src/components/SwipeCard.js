@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import PropTypes from 'react-proptypes';
 import styled from 'styled-components';
-import SwipeCards from 'react-native-swipe-cards';
+import SwipeCards from 'react-native-swipe-cards-deck';
 
 const handleRight = () => {
   // Do Something
@@ -15,21 +15,21 @@ const handleLeft = () => {
 const CardContainer = styled.View`
   flex: 1;
   margin: 0 50px;
-  maxHeight: 300;
-  borderRadius: 6px;
-  backgroundColor: #ff00b8;
-  justifyContent: center;
-  alignItems: center;
+  maxheight: 300;
+  borderradius: 6px;
+  backgroundcolor: #ff00b8;
+  justifycontent: center;
+  alignitems: center;
 `;
 
 const CardText = styled.Text`
-    padding: 0 20px;
-    lineHeight: 40;
-    textAlign: center;
-    color: white;
-    fontSize: 28;
-    fontWeight: bold;
-  `;
+  padding: 0 20px;
+  lineheight: 40;
+  textalign: center;
+  color: white;
+  fontsize: 28;
+  fontweight: bold;
+`;
 
 const Card = ({ text }) => (
   <CardContainer>
@@ -45,7 +45,7 @@ const NoMoreCards = () => <Text>No More cards...</Text>;
 export const SwipeCard = ({ cards }) => (
   <SwipeCards
     cards={cards}
-    renderCard={cardData => <Card {...cardData} />}
+    renderCard={(cardData) => <Card {...cardData} />}
     renderNoMoreCards={() => <NoMoreCards />}
     handleYup={() => handleRight()}
     handleNope={() => handleLeft()}
